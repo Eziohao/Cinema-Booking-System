@@ -1,0 +1,29 @@
+{
+  "name": "Cinema-Booking-System",
+  "description": "An Cinema-Booking-System",
+  "main": "index.js",
+  "authors": [
+    "Eziohao"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "Express",
+    "Nodejs",
+    "MongoDB",
+    "AWS"
+  ],
+  "homepage": "https://github.com/Eziohao/Cinema-Booking-System",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}
