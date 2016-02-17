@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" ng-app=''>
+<html lang="en" ng-app='movieApp'>
 <head>
 	<meta charset="UTF-8">
 	<title>Cinema-Booking-System Online</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script type="text/javascript" src="js/lib/angularjs.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/controller/app.js"></script>
 </head>
-<body class="container">
+<body class="container" ng-controller="movieAppController">
 	<h1>Cinema-Booking</h1> <h4>Booking Moive Tickets Online</h4>
-	
+	<hr>
+	<h4>Movie screen</h4>
+	<ul>
+		<li ng-repeat="movie in movies">
+			{{movie.id}}-{{movie.name}}-{{movie.rating}}
+		</li>
+	</ul>
 </body>
 </html>
