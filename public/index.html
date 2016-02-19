@@ -11,13 +11,25 @@
 	<script type="text/javascript" src="js/controller/app.js"></script>
 </head>
 <body class="container" ng-controller="movieAppController">
-	<h1>Cinema-Booking</h1> <h4>Booking Moive Tickets Online</h4>
+	<div ng-include src="headerSrc"></div>
 	<hr>
+	<div class="row">
+		<div class="col-xs-3">
+			<h4>Tickets available for:</h4>
+		</div>
+		<div class="col-xs-3">
+			<input type="text" class="form-control" placeholder="Search a movie" ng-model="search">
+		</div>
+	</div>
 	<h4>Movie screen</h4>
+	<br>
 	<ul>
 		<li ng-repeat="movie in movies">
-			{{movie.id}}-{{movie.name}}-{{movie.rating}}
+			{{movie.id}}-{{movie.name}}-{{movie.IMDB}}
+			<a href="javascript:" ng-click="getMovieById(movie.id)">Availability</a>
 		</li>
 	</ul>
+	<br>
+	<label ng-show="currMovie">Availabilty for {{currMovie.name}} is {{currMovie.Availability}}</label>
 </body>
 </html>

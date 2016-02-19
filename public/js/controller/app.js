@@ -26,5 +26,17 @@ movieApp.controller("movieAppController",function($scope){
      	"review":"A student tries to fix a problem he accidentally caused in OZ, a digital world, while pretending to be the fiancé of his friend at her grandmother's 90th birthday.",
      	"thumb":"https://en.wikipedia.org/wiki/File:Summer_Wars_poster.jpg#/media/File:Summer_Wars_poster.jpg"
      }  
-	]
+	];
+	$scope.currMovie=null;
+	$scope.getMovieById=function(id){
+		var movies=$scope.movies;
+		for(var i=0;i<movies.length;i++){
+			var movie=$scope.movies[i];
+			if(movie.id==id){
+				//console.log(movie);
+				$scope.currMovie=movie;
+			}
+		}
+	};
+	$scope.headerSrc="templ/header.html"
 })
