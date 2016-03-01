@@ -1,19 +1,18 @@
-<div class="row">
-    <div class="col-xs-3">
-        <h4>Tickets available for:</h4>
-    </div>
-    <div class="col-xs-3">
-        <input type="text" class="form-control" placeholder="Search a movie" ng-model="search">
+<h2>Book a Movie Ticket</h2>
+<input type="text" placeholder="Search Movies" class="form-control" ng-model="search">
+<div>
+    <div class="row movies-list">
+        <div class="col-md-4" ng-repeat="movie in movies">
+            <h2>{{movie.name|uppercase|limitTo:15}}</h2>
+            <p>
+                <img ng-src="{{movie.thumb}}" class="thumb-big">
+            </p>
+            <p>{{movie.review|limitTo:140}}....</p>
+            <p>
+                <span class="label label-warning availability">Availability:{{movie.Availability}}</span>
+                <a ng-href="#/movie/{{movie.id}}" class="btn btn-primary">Review</a>
+                <a href="#" class="btn btn-success" role="button">Book >></a>
+            </p>
+        </div>
     </div>
 </div>
-<h4>Movie screen</h4>
-<br>
-<ul>
-    <li ng-repeat="movie in movies|orderBy:'name':true|filter:search">
-        {{movie.name}}-{{movie.IMDB}}
-        <a href="javascript:" ng-click="getMovieById(movie.id)">Availability</a>
-        <a ng-href="#/movie/{{movie.id}}" ng-click="getMovieById(movie.id)">Review</a>
-    </li>
-</ul>
-<br>
-<label ng-show="currMovie">Availabilty for {{currMovie.name}} is {{currMovie.Availability}}</label>
