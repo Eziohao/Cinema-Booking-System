@@ -3,7 +3,7 @@
 <div>
     <div class="row movies-list">
         <div class="col-md-4" ng-repeat="movie in movies">
-            <h2>{{movie.name|uppercase|limitTo:15}}</h2>
+            <h2>{{movie.name|uppercase|limitTo:15}}...</h2>
             <p>
                 <img ng-src="{{movie.thumb}}" class="thumb-big">
             </p>

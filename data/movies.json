@@ -1,0 +1,59 @@
+[
+     {
+          "id": 0,
+          "name": "Inception",
+          "IMDB": 8.8,
+          "Availability": 30,
+          "review": "A thief who steals corporate secrets through use of the dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+          "thumb": "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg"
+     }, 
+     {
+          "id": 1,
+          "name": "Batman:The Dark Knight",
+          "IMDB": 9,
+          "Availability": 10,
+          "review": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+          "thumb": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg"
+     }, 
+     {
+          "id": 2,
+          "name": "Summer Wars",
+          "IMDB": 7.8,
+          "Availability": 15,
+          "review": "A student tries to fix a problem he accidentally caused in OZ, a digital world, while pretending to be the fiancé of his friend at her grandmother's 90th birthday.",
+          "thumb": "https://upload.wikimedia.org/wikipedia/en/7/7d/Summer_Wars_poster.jpg"
+     },
+     {
+     	"id":3,
+     	"name":"Little Miss Sunshine",
+     	"IMDB":7.9,
+     	"Availability":5,
+     	"review":"A family determined to get their young daughter into the finals of a beauty pageant take a cross-country trip in their VW bus.",
+     	"thumb":"https://upload.wikimedia.org/wikipedia/en/1/16/Little_miss_sunshine_poster.jpg"
+     },
+     {
+     	"id":4,
+     	"name":"X-men:Days of Future Past",
+     	"IMDB":8,
+     	"Availability":13,
+     	"review":"The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+     	"thumb":"https://upload.wikimedia.org/wikipedia/en/0/0c/X-Men_Days_of_Future_Past_poster.jpg"
+     },
+     {
+     	"id":5,
+     	"name":"The Hobbit: The Battle of the Five Armies",
+     	"IMDB":7.5,
+     	"Availability":20,
+     	"review":"Bilbo and Company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.",
+     	"thumb":"https://upload.wikimedia.org/wikipedia/en/0/0e/The_Hobbit_-_The_Battle_of_the_Five_Armies.jpg"
+     },
+     {
+     	"id":6,
+     	"name":"Avatar",
+     	"IMDB":7.9,
+     	"Availability":1,
+     	"review":"A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+     	"thumb":"https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg"
+     }
+
+]
