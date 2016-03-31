@@ -6,7 +6,11 @@ movieApp.config(function($routeProvider) {
 		}).when('/movie/:id', {
 			templateUrl: 'templ/movie.html',
 			controller: "movieDetailsController"
-		}).otherwise({
+		}).when('/bookTickets/:id',{
+			templateUrl:'templ/bookTicket.html',
+			controller:"bookTicketsController"
+		})
+		.otherwise({
 			redirectTo: "/"
 		})
 })
